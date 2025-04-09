@@ -93,5 +93,10 @@ namespace VisualProgramming.Airports
             DialogResult = DialogResult.Cancel;
             this.Close();
         }
+
+        private void tbCode_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

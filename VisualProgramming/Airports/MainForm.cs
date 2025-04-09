@@ -17,6 +17,7 @@ namespace VisualProgramming
         public MainForm()
         {
             InitializeComponent();
+            showInfo();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -49,9 +50,69 @@ namespace VisualProgramming
             if (addDestination.ShowDialog() == DialogResult.OK)
             {
                 Airport adding = (Airport)lbAirports.SelectedItem;
-                int index = airports.IndexOf(adding);
-                airports[index].Destinations.Add(addDestination.Destination);
+                adding.Destinations.Add(addDestination.Destination);
+                showDestinations();
+                showInfo();
             }
+        }
+
+        public void showDestinations()
+        {
+            lbDestinations.Items.Clear();
+            Airport airport = lbAirports.SelectedItem as Airport;
+            foreach (Destination destination in airport.Destinations)
+            {
+                lbDestinations.Items.Add(destination);
+            }
+        }
+
+
+        public void showInfo()
+        { 
+            Airport airport = lbAirports.SelectedItem as Airport;
+            if (airport == null)
+            {
+                tbExpensive.Text = "";
+                tbAverage.Text = "0";
+                return;
+            }
+
+            if (airport.Destinations.Count == 0)
+            {
+                tbExpensive.Text = "";
+                tbAverage.Text = "0";
+            }
+            else 
+            {
+               
+                decimal average = 0;
+                int count = 0;
+                Destination mostExpensive = airport.Destinations[0];
+                foreach (Destination destination in airport.Destinations)
+                {
+                    count++;
+                    average += (int)destination.Distance;
+                    if (destination.Price > mostExpensive.Price)
+                    {
+                        mostExpensive = destination;
+                    }
+                }
+                tbAverage.Text = (average / count).ToString();
+                tbExpensive.Text = mostExpensive.ToString();
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        
+      
+        }
+
+        private void lbAirports_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            showDestinations();
+            showInfo();
         }
     }
 }

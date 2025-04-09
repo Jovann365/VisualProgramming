@@ -66,8 +66,69 @@
     <Compile Include="Airports\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Airports\Program.cs" />
+    <Compile Include="Busses\AddBus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busses\AddBus.Designer.cs">
+      <DependentUpon>AddBus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busses\AddLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busses\AddLine.Designer.cs">
+      <DependentUpon>AddLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busses\Bus.cs" />
+    <Compile Include="Busses\Line.cs" />
+    <Compile Include="Busses\MainBusses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busses\MainBusses.Designer.cs">
+      <DependentUpon>MainBusses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cars\AddBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cars\AddBrand.Designer.cs">
+      <DependentUpon>AddBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cars\Car.cs" />
+    <Compile Include="Cars\MainCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cars\MainCars.Designer.cs">
+      <DependentUpon>MainCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cars\Model.cs" />
+    <Compile Include="CashAccount\AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashAccount\AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashAccount\Item.cs" />
+    <Compile Include="CashAccount\MainCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashAccount\MainCash.Designer.cs">
+      <DependentUpon>MainCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashAccount\Product.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Weather\AddDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Weather\AddDay.Designer.cs">
+      <DependentUpon>AddDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Weather\Prognosis.cs" />
+    <Compile Include="Weather\MainWeather.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Weather\MainWeather.Designer.cs">
+      <DependentUpon>MainWeather.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Airports\AddAirport.resx">
       <DependentUpon>AddAirport.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +137,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Airports\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busses\AddBus.resx">
+      <DependentUpon>AddBus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busses\AddLine.resx">
+      <DependentUpon>AddLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busses\MainBusses.resx">
+      <DependentUpon>MainBusses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cars\AddBrand.resx">
+      <DependentUpon>AddBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cars\MainCars.resx">
+      <DependentUpon>MainCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashAccount\AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashAccount\MainCash.resx">
+      <DependentUpon>MainCash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -86,6 +168,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Weather\AddDay.resx">
+      <DependentUpon>AddDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Weather\MainWeather.resx">
+      <DependentUpon>MainWeather.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -99,5 +187,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

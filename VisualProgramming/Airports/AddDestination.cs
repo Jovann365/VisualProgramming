@@ -42,5 +42,15 @@ namespace VisualProgramming.Airports
             Destination = new Destination(tbName.Text, (int)nudDistance.Value, (int)nudPrice.Value);
             DialogResult = DialogResult.OK;
         }
+
+        private void nudPrice_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
