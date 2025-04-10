@@ -127,6 +127,20 @@
     <Compile Include="ConferencePapers\MainPapers.Designer.cs">
       <DependentUpon>MainPapers.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExamProblems\AddExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExamProblems\AddExam.Designer.cs">
+      <DependentUpon>AddExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExamProblems\Exam.cs" />
+    <Compile Include="ExamProblems\MainExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExamProblems\MainExam.Designer.cs">
+      <DependentUpon>MainExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExamProblems\Problem.cs" />
     <Compile Include="F1Race\AddDriver.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +218,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConferencePapers\MainPapers.resx">
       <DependentUpon>MainPapers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamProblems\AddExam.resx">
+      <DependentUpon>AddExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamProblems\MainExam.resx">
+      <DependentUpon>MainExam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F1Race\AddDriver.resx">
       <DependentUpon>AddDriver.cs</DependentUpon>
