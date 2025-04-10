@@ -12,6 +12,6 @@ Exercises:
 - CashAccount :dollar:
 - ConferencePapers :page_facing_up:
 - ExamProblems :bookmark_tabs:
-- F1Race:checkered_flag:
+- F1Race :checkered_flag:
 - TVProgram :tv:
 
