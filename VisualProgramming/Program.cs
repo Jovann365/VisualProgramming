@@ -17,7 +17,7 @@ namespace VisualProgramming
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new MainForm());
-            Application.Run(new ConferencePapers.MainPapers());
+            Application.Run(new TVProgram.MainTV());
         }
     }
 }
