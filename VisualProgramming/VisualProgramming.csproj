@@ -114,6 +114,19 @@
       <DependentUpon>MainCash.cs</DependentUpon>
     </Compile>
     <Compile Include="CashAccount\Product.cs" />
+    <Compile Include="CheckUp\AddPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckUp\AddPatient.Designer.cs">
+      <DependentUpon>AddPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckUp\MainCheckUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckUp\MainCheckUp.Designer.cs">
+      <DependentUpon>MainCheckUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckUp\Mesurement.cs" />
     <Compile Include="ConferencePapers\AddConference.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +226,12 @@
     <EmbeddedResource Include="CashAccount\MainCash.resx">
       <DependentUpon>MainCash.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CheckUp\AddPatient.resx">
+      <DependentUpon>AddPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckUp\MainCheckUp.resx">
+      <DependentUpon>MainCheckUp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConferencePapers\AddConference.resx">
       <DependentUpon>AddConference.cs</DependentUpon>
     </EmbeddedResource>
@@ -252,6 +271,7 @@
     <EmbeddedResource Include="Weather\MainWeather.resx">
       <DependentUpon>MainWeather.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="CheckUp\Patient.cs" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
